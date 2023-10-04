@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.084);
+}
+.header {
+  margin: 0 10px;
+  padding-top: 36px;
+  display: flex;
+  flex: grow;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: end;
+}
+
+.headerlogo {
+  padding-bottom: 10px;
+}
+.navbuttoncontainer {
+  display: flex;
+  gap: 48px;
+  padding-bottom: 10px;
+}
+.navbuttoncontainer a {
+  border-style: hidden;
+  outline: none;
+}
+
+.HeaderRight {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.HeaderRightIcons {
+  display: flex;
+  gap: 16px;
+  align-self: self-end;
+  padding-bottom: 10px;
+}
+.SearchBar {
+  outline: none;
+  border: none;
+  display: flex;
+  gap: 34px;
+  background-color: var(--secondary-light);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.SearchBar input {
+  outline: none;
+  border: none;
+  background-color: var(--secondary-light);
+}

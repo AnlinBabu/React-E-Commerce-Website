@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+}
+
+.container div {
+  background-color: var(--background-black);
+  color: var(--primary-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+.saletxt {
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+
+  display: flex;
+}
+.saletxt span {
+  font-weight: 600;
+  font-size: 14;
+}
+.language {
+  align-items: center;
+  margin-left: 230px;
+}
