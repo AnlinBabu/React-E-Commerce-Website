@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-light: #ffffff;
   --primary1-dark: #363738;
@@ -155,7 +159,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

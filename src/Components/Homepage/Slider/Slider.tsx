@@ -3,7 +3,7 @@ import SliderCarousel from "./SliderCarousel";
 
 export default function Slider() {
   return (
-    <div>
+    <div className="flex max-w-[1200px] mx-auto">
       <SectionList />
       <SliderCarousel />
     </div>
