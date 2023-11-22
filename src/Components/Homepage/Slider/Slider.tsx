@@ -1,4 +1,3 @@
-import React from "react";
 import SectionList from "./SectionList";
 import SliderCarousel from "./SliderCarousel";
 

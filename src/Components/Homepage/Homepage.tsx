@@ -1,11 +1,12 @@
-import React from "react";
-import TopHeader from "../Widgets/TopHeader";
-import Header from "../Widgets/Header";
+import Header from "../Widgets/Header/Header";
+import Promotion from "../Widgets/Promotion";
+import Slider from "./Slider/Slider";
 export default function Homepage() {
   return (
     <div>
-      <TopHeader />
+      <Promotion />
       <Header />
+      <Slider />
     </div>
   );
 }

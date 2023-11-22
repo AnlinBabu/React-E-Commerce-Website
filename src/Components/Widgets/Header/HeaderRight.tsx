@@ -1,9 +1,8 @@
-import React from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar";
 import classes from "./Header.module.css";
-import WishlistIcon from "../../assets/WishlistIcon";
-import CartIcon from "../../assets/CartIcon";
-import UserIcon from "../../assets/UserIcon";
+import WishlistIcon from "../../../assets/WishlistIcon";
+import CartIcon from "../../../assets/CartIcon";
+import UserIcon from "../../../assets/UserIcon";
 
 export default function HeaderRight() {
   return (

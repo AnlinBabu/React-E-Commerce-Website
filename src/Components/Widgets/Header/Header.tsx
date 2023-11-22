@@ -1,8 +1,7 @@
-import React from "react";
 import classes from "./Header.module.css";
 import HeaderCenter from "./HeaderCenter";
 import HeaderRight from "./HeaderRight";
-import LogoIcon from "../../assets/LogoIcon";
+import LogoIcon from "../../../assets/LogoIcon";
 export default function Header() {
   return (
     <div className={classes.container}>

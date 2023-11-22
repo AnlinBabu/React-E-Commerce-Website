@@ -1,7 +1,6 @@
-import React from "react";
-import classes from "./TopHeader.module.css";
+import classes from "./Promotion.module.css";
 import DropDownIcon from "../../assets/DropDownIcon";
-export default function TopHeader() {
+export default function Promotion() {
   return (
     <div className={classes.container}>
       <div>
