@@ -2,6 +2,7 @@ import { useState } from "react";
 import MainHeading from "../../Widgets/MainHeading";
 import SubHeading from "../../Widgets/SubHeading";
 import CategoryItem from "./CategoryItem";
+import CustomCarousel from "../../Widgets/CustomCarousel";
 
 type Props = {};
 
@@ -63,17 +64,15 @@ const products = [
 ];
 export default function Categories({}: Props) {
   const [visibleIndex, setVisibleIndex] = useState(0);
-  const productsToShow = products.slice(visibleIndex, visibleIndex + 6);
+
+  const showNextProducts = () => {
+    setVisibleIndex((prevIndex) => (prevIndex + 1) % products.length);
+  };
 
   const showPreviousProducts = () => {
-    if (visibleIndex > 0) {
-      setVisibleIndex(visibleIndex - 1);
-    }
-  };
-  const showNextProducts = () => {
-    if (visibleIndex < products.length - 6) {
-      setVisibleIndex(visibleIndex + 1);
-    }
+    setVisibleIndex(
+      (prevIndex) => (prevIndex - 1 + products.length) % products.length
+    );
   };
 
   return (
@@ -90,15 +89,25 @@ export default function Categories({}: Props) {
           showNext={showNextProducts}
         />
       </div>
-      <div className="flex gap-8 mb-[70px] ">
-        {productsToShow.map((product, index) => (
-          <CategoryItem
-            key={index}
-            url={product.url}
-            categoryTxt={product.categoryText}
-            isSelected={false}
-          />
-        ))}
+
+      <div className="flex gap-8 overflow-hidden relative">
+        <div
+          className="flex gap-[30px] transition-transform ease-in-out duration-300 transform"
+          style={{
+            transform: `translateX(-${
+              visibleIndex * (100 / products.length)
+            }%)`,
+          }}
+        >
+          {products.map((product, index) => (
+            <CategoryItem
+              key={index}
+              url={product.url}
+              categoryTxt={product.categoryText}
+              isSelected={false}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

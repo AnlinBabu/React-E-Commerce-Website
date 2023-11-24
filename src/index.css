@@ -171,3 +171,6 @@ table {
   display: flex;
   transition: transform 0.5s ease;
 }
+.default-transistion {
+  transition: transform 0.5s ease;
+}

@@ -26,7 +26,7 @@ export default function Product({
   const finalPrice = price - (price * discount) / 100;
   return (
     <div className="flex flex-col gap-5">
-      <div className="w-[270px] h-[250px] flex flex-col ">
+      <div className="w-[270px] h-[250px] flex flex-col relative group">
         <div className="w-full h-auto relative bg-secondarylight rounded flex-1  flex">
           {discount > 0 && (
             <div className="bg-secondaryred text-white  w-[55px] h-[26px] ml-4 mt-4 rounded absolute flex left-0">
@@ -43,7 +43,7 @@ export default function Product({
             </div>
           </div>
         </div>
-        <button className="bg-black h-10 w-auto flex text-white rounded-b-[4px]">
+        <button className="bg-black h-10  group-hover:block hidden text-white rounded-b-[4px] absolute w-full bottom-0 ">
           <span className="m-auto font-semibold">Add To Cart</span>
         </button>
       </div>
