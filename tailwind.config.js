@@ -11,11 +11,13 @@ export default {
         secondarylight: "#f5f5f5",
         secondarycream: "#fefaf1",
         secondaryred: "#ff2e60",
+        secondary2: "#DB4444",
         button1: "#00ba88",
         hoverbutton1: "#00966d",
         hoverbutton2: "#a0bce0",
         background: "#ffffff",
         text1: "#fafafa",
+        hoverbutton: "#E07575",
 
         text2: "#7d8184",
         text3: "#504242",

@@ -47,8 +47,8 @@
   gap: 34px;
   background-color: var(--secondary-light);
   padding: 10px 20px;
-
-  margin-bottom: 16px;
+  /* margin: auto 0; */
+  margin-bottom: 10px;
 }
 .SearchBar input {
   outline: none;
