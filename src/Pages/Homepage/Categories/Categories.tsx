@@ -1,17 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MainHeading from "../../../Widgets/MainHeading";
 import SubHeading from "../../../Widgets/SubHeading";
-import CategoryItem from "./CategoryItem";
-import { useQuery } from "react-query";
-type content = {
-  icon: string;
-  categoryName: string;
-};
 
-type Category = {
-  id: string;
-  content: content[];
-};
+import { useGetCategoryQuery } from "../../../services/homepage";
+import CategoryItem from "./CategoryItem";
+import { Category } from "../../../services/types";
+import Loading from "../../../Widgets/Loading";
+import Error from "../../../Widgets/Error";
 
 const products = [
   { url: "src/assets/Category/Category-Camera.png", categoryText: "Camera" },
@@ -82,15 +77,13 @@ export default function Categories() {
     );
   };
 
-  const { isLoading, error, data } = useQuery<Category>("repoData", () =>
-    fetch("http://localhost:3000/home/Category").then((res) => res.json())
-  );
+  const { data, error, isLoading } = useGetCategoryQuery("");
 
-  if (isLoading) return "Loading...";
+  if (isLoading) return <Loading />;
 
-  if (error) return "An error has occurred: " + error;
+  if (error) return <Error errorTxt={error} />;
   return (
-    <div className="flex flex-col border-b-[1px] border-solid border-bordercolor mt-20 ">
+    <div className="flex flex-col border-b-[1px] border-solid border-bordercolor mt-20 mb-[70px]">
       <div className="mb-[60px]">
         <div className="mb-5">
           <SubHeading text="Categories" />
@@ -113,11 +106,11 @@ export default function Categories() {
             }%)`,
           }}
         >
-          {data?.content?.map((category, index) => (
+          {(data?.content as Category[]).map((item, index) => (
             <CategoryItem
               key={index}
-              url={category.icon}
-              categoryTxt={category.categoryName}
+              url={item.icon}
+              categoryTxt={item.categoryName}
               isSelected={index === selected}
               selectCurrent={() => setSelected(index)}
             />

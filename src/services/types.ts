@@ -18,7 +18,7 @@ export interface Category {
 
 export interface ContentItem {
   id: string;
-  content: Product[] | Category;
+  content: Category[] | Product[];
 }
 
 export interface HomeData {

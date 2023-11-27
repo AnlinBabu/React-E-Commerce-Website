@@ -1,6 +1,6 @@
 import CustomButton from "./CustomButton";
-import useCounter from "../hooks/useCounter";
 import Counter from "./Counter";
+import useCounter from "../hooks/useCounter";
 import ArrowBack from "../assets/ArrowBack";
 import ArrowNext from "../assets/ArrowNext";
 
