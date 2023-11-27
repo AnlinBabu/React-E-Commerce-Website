@@ -1,5 +1,5 @@
-import HeartSmall from "../../assets/HeartSmall";
-import Eye from "../../assets/Eye";
+import HeartSmall from "../assets/HeartSmall";
+import Eye from "../assets/Eye";
 import StartRating from "./StartRating";
 
 type Props = {

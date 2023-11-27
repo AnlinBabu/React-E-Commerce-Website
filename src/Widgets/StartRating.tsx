@@ -1,4 +1,4 @@
-import Star from "../../assets/Star";
+import Star from "../assets/Star";
 
 type ratingProps = {
   rating: number;

@@ -1,7 +1,7 @@
-import SubHeading from "../../Widgets/SubHeading";
-import MainHeading from "../../Widgets/MainHeading";
-import Product from "../../Widgets/Product";
-import CustomButton from "../../Widgets/CustomButton";
+import SubHeading from "../../../Widgets/SubHeading";
+import MainHeading from "../../../Widgets/MainHeading";
+import Product from "../../../Widgets/Product";
+import CustomButton from "../../../Widgets/CustomButton";
 import { useState } from "react";
 
 const products = [
@@ -79,7 +79,7 @@ const products = [
   },
 ];
 
-export default function Todays() {
+export default function ProductView() {
   const [visibleIndex, setVisibleIndex] = useState(0);
 
   const showNextProducts = () => {
@@ -121,6 +121,7 @@ export default function Todays() {
                 productName={product.productName}
                 price={product.price}
                 rating={product.rating}
+                discount={product.discount}
                 rateCount={product.rateCount}
                 viewType={"normal"}
               />

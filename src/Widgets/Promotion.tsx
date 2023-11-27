@@ -1,5 +1,5 @@
 import classes from "./Promotion.module.css";
-import DropDownIcon from "../../assets/DropDownIcon";
+import DropDownIcon from "../assets/DropDownIcon";
 export default function Promotion() {
   return (
     <div className={classes.container}>

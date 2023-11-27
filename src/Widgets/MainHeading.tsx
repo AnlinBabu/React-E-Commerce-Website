@@ -1,8 +1,8 @@
 import CustomButton from "./CustomButton";
 import useCounter from "../hooks/useCounter";
 import Counter from "./Counter";
-import ArrowBack from "../../assets/ArrowBack";
-import ArrowNext from "../../assets/ArrowNext";
+import ArrowBack from "../assets/ArrowBack";
+import ArrowNext from "../assets/ArrowNext";
 
 type Props = {
   headingTxt: string;
