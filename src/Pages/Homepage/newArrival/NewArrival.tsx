@@ -7,7 +7,7 @@ import { useGetNewArrivalQuery } from "../../../services/homepage";
 import NewItem from "./NewItem";
 import { Product } from "../../../services/types";
 // import NewArrivalItem from "./NewArrivalItem";
-export default function NewArrival({}: Props) {
+export default function NewArrival() {
   const { data, error, isLoading } = useGetNewArrivalQuery("");
 
   console.log(data);
