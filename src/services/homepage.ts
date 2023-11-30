@@ -1,6 +1,6 @@
 // Need to use the React-specific entry point to import createApi
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { type Product, type HomeData, type ContentItem } from "./types";
+import { type HomeData, type ContentItem } from "./types";
 
 // Define a service using a base URL and expected endpoints
 export const homepageApi = createApi({
@@ -23,6 +23,12 @@ export const homepageApi = createApi({
     getExplore: builder.query<ContentItem, string>({
       query: () => "/Explore",
     }),
+    getMainAdvertisement: builder.query<ContentItem, string>({
+      query: () => "/MainAdvertisement",
+    }),
+    getNewArrival: builder.query<ContentItem, string>({
+      query: () => "/NewArrival",
+    }),
   }),
 });
 
@@ -34,4 +40,6 @@ export const {
   useGetFlashSalesQuery,
   useGetBestSellingQuery,
   useGetExploreQuery,
+  useGetMainAdvertisementQuery,
+  useGetNewArrivalQuery,
 } = homepageApi;

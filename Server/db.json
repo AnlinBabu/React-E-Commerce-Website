@@ -18,9 +18,10 @@
         {
           "id": 1,
 
-          "icon": "Server/New/2.png",
+          "icon": "Server/New/1.png",
           "status": "new",
           "productName": "AK-900 Wired Keyboard",
+          "shortdescription": "Black and White version of the PS5 coming out on sale.",
           "price": 100,
           "rating": 3.5,
           "rateCount": 95,
@@ -29,9 +30,11 @@
         {
           "id": 2,
 
-          "icon": "Server/New/3.png",
+          "icon": "Server/New/2.png",
           "status": "new",
           "productName": "IPS LCD Gaming Monitor",
+          "shortdescription": "Featured woman collections that give you another vibe.",
+
           "price": 430,
           "rating": 3.5,
           "rateCount": 95,
@@ -41,9 +44,24 @@
         {
           "id": 3,
 
+          "icon": "Server/New/3.png",
+          "status": "new",
+          "productName": "HAVIT HV-G92 Gamepad",
+          "shortdescription": "Amazon wireless speakers",
+
+          "price": 120,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
           "icon": "Server/New/4.png",
           "status": "new",
           "productName": "HAVIT HV-G92 Gamepad",
+          "shortdescription": "GUCCI INTENSE OUD EDP",
+
           "price": 120,
           "rating": 3.5,
           "rateCount": 95,
@@ -108,6 +126,7 @@
 
     {
       "id": "Flash_Sales",
+      "time": "2023-11-30 16:30",
       "content": [
         {
           "id": 1,
@@ -116,6 +135,7 @@
           "discount": 2,
           "productName": "testItem",
           "price": 100,
+
           "rating": 3.5,
           "rateCount": 95,
           "viewType": "normal"
@@ -207,7 +227,6 @@
           "id": 1,
 
           "icon": "src/assets/products/9.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -218,7 +237,6 @@
           "id": 2,
 
           "icon": "src/assets/products/1.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -229,7 +247,6 @@
           "id": 3,
 
           "icon": "src/assets/products/2.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -240,7 +257,6 @@
           "id": 4,
 
           "icon": "src/assets/products/3.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -251,7 +267,6 @@
           "id": 5,
 
           "icon": "src/assets/products/4.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -262,7 +277,6 @@
           "id": 6,
 
           "icon": "src/assets/products/6.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -273,7 +287,6 @@
           "id": 7,
 
           "icon": "src/assets/products/5.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -284,7 +297,6 @@
           "id": 8,
 
           "icon": "src/assets/products/7.png",
-          "discount": 2,
           "productName": "testItem",
           "price": 100,
           "rating": 3.5,
@@ -384,8 +396,685 @@
           "rating": 3.5,
           "rateCount": 95,
           "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 2,
+
+          "icon": "src/assets/products/1.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 3,
+
+          "icon": "src/assets/products/2.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
+          "icon": "src/assets/products/3.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 5,
+
+          "icon": "src/assets/products/4.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 6,
+
+          "icon": "src/assets/products/6.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 2,
+
+          "icon": "src/assets/products/1.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 3,
+
+          "icon": "src/assets/products/2.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
+          "icon": "src/assets/products/3.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 5,
+
+          "icon": "src/assets/products/4.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 6,
+
+          "icon": "src/assets/products/6.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 2,
+
+          "icon": "src/assets/products/1.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 3,
+
+          "icon": "src/assets/products/2.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
+          "icon": "src/assets/products/3.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 5,
+
+          "icon": "src/assets/products/4.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 6,
+
+          "icon": "src/assets/products/6.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 2,
+
+          "icon": "src/assets/products/1.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 3,
+
+          "icon": "src/assets/products/2.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
+          "icon": "src/assets/products/3.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 5,
+
+          "icon": "src/assets/products/4.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 2,
+
+          "icon": "src/assets/products/1.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 3,
+
+          "icon": "src/assets/products/2.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
+          "icon": "src/assets/products/3.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 5,
+
+          "icon": "src/assets/products/4.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 6,
+
+          "icon": "src/assets/products/6.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 1,
+
+          "icon": "src/assets/products/9.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 2,
+
+          "icon": "src/assets/products/1.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 3,
+
+          "icon": "src/assets/products/2.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 4,
+
+          "icon": "src/assets/products/3.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 5,
+
+          "icon": "src/assets/products/4.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 6,
+
+          "icon": "src/assets/products/6.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 7,
+
+          "icon": "src/assets/products/5.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
+        },
+        {
+          "id": 8,
+
+          "icon": "src/assets/products/7.png",
+          "discount": 2,
+          "productName": "testItem",
+          "price": 100,
+          "rating": 3.5,
+          "rateCount": 95,
+          "viewType": "normal"
         }
       ]
+    },
+    {
+      "id": "MainAdvertisement",
+      "icon": "Server/hero/hero_endframe2.png",
+      "time": "2023-12-3 16:30",
+      "productid": "id"
     }
   ]
 }

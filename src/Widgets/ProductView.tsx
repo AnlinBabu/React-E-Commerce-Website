@@ -1,155 +1,102 @@
+import React from "react";
 import SubHeading from "./SubHeading";
 import MainHeading from "./MainHeading";
 import Product from "./Product";
-import CustomButton from "./CustomButton";
 import { useState } from "react";
 import { Product as ProductType } from "../services/types";
-
-// const products = [
-//   {
-//     url: "src/assets/products/9.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/1.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/2.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/3.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/4.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/6.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/5.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-//   {
-//     url: "src/assets/products/7.png",
-//     discount: 2,
-//     productName: "testItem",
-//     price: 100,
-//     rating: 3.5,
-//     rateCount: 95,
-//     viewType: "normal",
-//   },
-// ];
 
 type Props = {
   products: ProductType[];
   targetHours?: string;
   headingTxt: string;
   showArrows?: boolean;
-  buttonTxt?: string;
+  headingbuttonTxt?: string;
   headingshadow?: boolean;
+  subheadingTxt: string;
+  bottombuttonTxt?: string;
+  numRows: number;
 };
+
 export default function ProductView({
   products,
   targetHours,
   headingTxt,
   showArrows,
-  buttonTxt,
+  headingbuttonTxt,
   headingshadow,
+  subheadingTxt,
+  bottombuttonTxt,
+  numRows = 1,
 }: Props) {
   const [visibleIndex, setVisibleIndex] = useState(0);
-
+  const productsPerPage = 4 * numRows;
+  const numPages = Math.ceil(products.length / productsPerPage);
+  console.log(
+    "numpages" + numPages,
+    "productsPerPage" + productsPerPage,
+    "productsLength" + products.length,
+    numRows
+  );
   const showNextProducts = () => {
-    setVisibleIndex((prevIndex) => (prevIndex + 1) % products.length);
+    setVisibleIndex((prevIndex) => (prevIndex + 1 * numRows) % products.length);
   };
 
   const showPreviousProducts = () => {
     setVisibleIndex(
-      (prevIndex) => (prevIndex - 1 + products.length) % products.length
+      (prevIndex) =>
+        (prevIndex - 1 * numRows + products.length) % products.length
     );
   };
+
   return (
-    <div className="flex flex-col border-b-[1px] border-solid border-bordercolor">
-      <div className="mb-[60px]">
-        <div className="mb-5">
-          <SubHeading text="Today's" />
-        </div>
-        <div className="mb-10">
-          <MainHeading
-            headingTxt={headingTxt}
-            showArrows={showArrows}
-            buttonTxt={buttonTxt}
-            headingshadow={headingshadow}
-            targetHours={targetHours}
-            showPrevious={showPreviousProducts}
-            showNext={showNextProducts}
-          />
-        </div>
-        <div className="flex gap-8 overflow-hidden relative">
-          <div
-            className="flex gap-[30px] transition-transform ease-in-out duration-300 transform"
-            style={{
-              transform: `translateX(-${
-                visibleIndex * (100 / products.length)
-              }%)`,
-            }}
-          >
-            {products.map((product, index) => (
-              <Product
-                key={index}
-                url={product.icon}
-                productName={product.productName}
-                price={product.price}
-                rating={product.rating}
-                discount={product.discount}
-                rateCount={product.rateCount}
-                viewType={"normal"}
-              />
-            ))}
-          </div>
-        </div>
+    <div className="grid grid-cols-1 gap-4 mb-[60px]">
+      <div className="mb-5">
+        <SubHeading text={subheadingTxt} />
       </div>
-      <div className="my-[60px] mx-auto">
-        <CustomButton btnTxt={"View All Products"} />
+      <div className="mb-10">
+        <MainHeading
+          headingTxt={headingTxt}
+          showArrows={showArrows}
+          buttonTxt={headingbuttonTxt}
+          headingshadow={headingshadow}
+          targetHours={targetHours}
+          showPrevious={showPreviousProducts}
+          showNext={showNextProducts}
+        />
+      </div>
+
+      <div className="overflow-hidden">
+        <div
+          className="grid grid-flow-col gap-8 relative transition-transform ease-in-out duration-300 transform"
+          style={{
+            //302 is the product  size in pixel
+            transform: `translateX(-${(visibleIndex * 302) / numRows}px)`,
+          }}
+        >
+          {products.map((_item, index) => {
+            const row = Math.floor(index / numRows);
+            const col = index % numRows;
+
+            return (
+              <div key={index} className="grid-row">
+                {products
+                  .slice(row * numRows, (row + 1) * numRows)
+                  .map((product, productIndex) => (
+                    <Product
+                      key={productIndex}
+                      url={product.icon}
+                      productName={product.productName}
+                      price={product.price}
+                      rating={product.rating}
+                      discount={product.discount}
+                      rateCount={product.rateCount}
+                      viewType="normal"
+                    />
+                  ))}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -12,10 +12,13 @@ export default function FlashSales() {
   return (
     <ProductView
       products={data?.content as Product[]}
-      targetHours="2023-11-30 16:30"
+      targetHours={data?.time}
       headingTxt="Flash Sales"
       showArrows={true}
       headingshadow={false}
+      subheadingTxt={"Today's"}
+      bottombuttonTxt={"View All Products"}
+      numRows={1}
     />
   );
 }

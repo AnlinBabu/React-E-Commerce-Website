@@ -15,7 +15,7 @@ type Props = {
 
 export default function Product({
   url = "src/assets/products/9.png",
-  discount = 2,
+  discount = 0,
   productName = "testItem",
   price = 100,
   rating = 3.5,

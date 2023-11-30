@@ -13,7 +13,8 @@ export default function BestSelling() {
       products={data?.content as Product[]}
       headingTxt={"Best Selling Products"}
       showArrows={false}
-      buttonTxt={"View All"}
+      headingbuttonTxt={"View All"}
+      subheadingTxt={"This Month"}
     />
   );
 }

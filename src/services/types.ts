@@ -3,6 +3,8 @@ export interface Product {
   icon: string;
   discount: number;
   productName: string;
+  shortdescription: string;
+  producturl: string;
   price: number;
   rating: number;
   rateCount: number;
@@ -18,7 +20,10 @@ export interface Category {
 
 export interface ContentItem {
   id: string;
-  content: Category[] | Product[];
+  time?: string;
+  productid?: string;
+  icon?: string;
+  content?: Category[] | Product[];
 }
 
 export interface HomeData {

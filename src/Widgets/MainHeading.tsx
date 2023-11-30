@@ -24,7 +24,7 @@ export default function MainHeading({
   showNext,
 }: Props) {
   //custom hook implementation
-  const { days, hours, minutes, seconds } = useCounter({ targetHours });
+  const { days, hours, minutes, seconds } = useCounter(targetHours as string);
 
   return (
     <div className="flex justify-between ">

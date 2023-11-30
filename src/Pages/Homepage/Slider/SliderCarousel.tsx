@@ -20,7 +20,7 @@ export default function SliderCarousel() {
           swipeable={true}
           emulateTouch={true}
           autoPlay={true}
-          // infiniteLoop={true}
+          infiniteLoop={true}
         >
           <CarouselItem />
           <CarouselItem />
