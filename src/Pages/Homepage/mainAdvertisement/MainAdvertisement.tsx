@@ -6,7 +6,7 @@ import CircleTime from "./CircleTime";
 import CustomButton from "../../../Widgets/CustomButton";
 import useCounter from "../../../hooks/useCounter";
 
-export default function MainAdvertisement({}: Props) {
+export default function MainAdvertisement() {
   const { data, error, isLoading } = useGetMainAdvertisementQuery("");
   const { days, hours, minutes, seconds, updateRemainingTime } = useCounter("");
   useEffect(() => {

@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <div className=" bg-black text-text1 flex   h-auto">
+    <div className=" bg-black text-text1 flex flex-col  h-auto">
       <div className="max-w-[1200px] mx-auto  mt-20 mb-16 flex gap-[87px] ">
         <div>
           <div className="flex flex-col gap-6 mb-4">
@@ -71,6 +71,11 @@ export default function Footer({}: Props) {
               <img src="src/assets/Icon-Twitter.png" alt="" />
             </div>
           </div>
+        </div>
+      </div>
+      <div className=" border-t flex border-solid mb-6 border-gray-800 text-text2">
+        <div className="mx-auto mt-4 ">
+          &#169; <span>Copyright Rimel 2022. All right reserved</span>
         </div>
       </div>
     </div>

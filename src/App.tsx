@@ -6,6 +6,8 @@ import About from "./Pages/About/About";
 import SignUp from "./Pages/SignUp/SignUp";
 import RouteError from "./Widgets/RouteError";
 import AppLayout from "./Widgets/Applayout";
+import WishlistIcon from "./assets/WishlistIcon";
+import WishList from "./Pages/wishList/WishList";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +24,15 @@ const router = createBrowserRouter([
         element: <Contact />,
         errorElement: <RouteError />,
       },
-      { path: "/About", element: <About /> },
+      {
+        path: "/About",
+        element: <About />,
+      },
+      {
+        path: "/wishList",
+        element: <WishList />,
+      },
+
       {
         path: "/SignUp",
         element: <SignUp />,
@@ -32,7 +42,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 
   // return (
   //   <BrowserRouter>
