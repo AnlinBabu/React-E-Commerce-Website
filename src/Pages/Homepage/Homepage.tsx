@@ -24,19 +24,19 @@ export default function Homepage() {
   // if (error) return "An error has occurred: " + error;
   return (
     <div>
-      <Promotion />
+      {/* <Promotion />
       <Header />
-      <div className=" max-w-[1200px] mx-auto">
-        <Slider />
-        <FlashSales />
-        <Categories />
-        <BestSelling />
-        <MainAdvertisement />
-        <Explore />
-        <NewArrival />
-        <Policies />
-      </div>
-      <Footer />
+      <div className=" max-w-[1200px] mx-auto"> */}
+      <Slider />
+      <FlashSales />
+      <Categories />
+      <BestSelling />
+      <MainAdvertisement />
+      <Explore />
+      <NewArrival />
+      <Policies />
+      {/* </div> */}
+      {/* <Footer /> */}
     </div>
   );
 }
