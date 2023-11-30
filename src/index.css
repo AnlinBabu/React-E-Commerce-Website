@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-light: #ffffff;
   --primary1-dark: #363738;
@@ -30,6 +34,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 html,
 body,
 div,
@@ -153,4 +158,19 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+.headingDropSHadow {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.product-list-container {
+  overflow-x: hidden;
+  transition: transform 0.5s ease;
+}
+
+.product-list {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.default-transistion {
+  transition: transform 0.5s ease;
 }
