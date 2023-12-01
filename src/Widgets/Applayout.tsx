@@ -13,7 +13,7 @@ function AppLayout() {
       {isLoading && <Loader />}
       <Promotion />
       <Header />
-      <div className=" max-w-[1200px] mx-auto">
+      <div className=" max-w-[1200px] mx-auto ">
         <Outlet />
       </div>
       <Footer />

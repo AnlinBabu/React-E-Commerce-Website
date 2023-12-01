@@ -1,9 +1,6 @@
-import React from "react";
 import SearchArrow from "../assets/SearchArrow";
 
-type Props = {};
-
-export default function Footer({}: Props) {
+export default function Footer() {
   return (
     <div className=" bg-black text-text1 flex flex-col  h-auto">
       <div className="max-w-[1200px] mx-auto  mt-20 mb-16 flex gap-[87px] ">

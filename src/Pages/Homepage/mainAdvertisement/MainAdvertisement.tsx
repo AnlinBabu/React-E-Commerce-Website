@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useGetMainAdvertisementQuery } from "../../../services/homepage";
 import Error from "../../../Widgets/Error";
 import Loading from "../../../Widgets/Loading";

@@ -6,8 +6,13 @@ import About from "./Pages/About/About";
 import SignUp from "./Pages/SignUp/SignUp";
 import RouteError from "./Widgets/RouteError";
 import AppLayout from "./Widgets/Applayout";
-import WishlistIcon from "./assets/WishlistIcon";
 import WishList from "./Pages/wishList/WishList";
+import { createClient } from "@supabase/supabase-js";
+
+const supabase = createClient(
+  "https://hjahfjkuwcqmosymgxue.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqYWhmamt1d2NxbW9zeW1neHVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE0MDU5MzMsImV4cCI6MjAxNjk4MTkzM30.um2g4PWqRmCQFIn1qWpkPYT6Nyu8aa_V7FDtdZiUn_c"
+);
 
 const router = createBrowserRouter([
   {

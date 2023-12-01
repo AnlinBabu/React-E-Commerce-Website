@@ -12,6 +12,7 @@ type Props = {
   headingshadow?: boolean;
   showPrevious?: () => void;
   showNext?: () => void;
+  leftRectagle?: boolean;
 };
 
 export default function MainHeading({
@@ -22,6 +23,7 @@ export default function MainHeading({
   headingshadow = true,
   showPrevious,
   showNext,
+  leftRectagle,
 }: Props) {
   //custom hook implementation
   const { days, hours, minutes, seconds } = useCounter(targetHours as string);
@@ -32,8 +34,12 @@ export default function MainHeading({
         <div
           className={` text-4xl text-black   font-semibold  mt-auto ${
             headingshadow ? "headingDropSHadow" : ""
-          }`}
+          } flex`}
         >
+          {leftRectagle && (
+            <div className="bg-secondaryred rounded w-5 h-10 mr-4"></div>
+          )}
+
           {headingTxt}
         </div>
         {targetHours && (

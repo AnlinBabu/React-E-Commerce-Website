@@ -1,6 +1,5 @@
 import { SerializedError } from "@reduxjs/toolkit";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
-import React from "react";
 
 type Props = { errorTxt: string | FetchBaseQueryError | SerializedError };
 
