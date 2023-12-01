@@ -1,4 +1,3 @@
-import React from "react";
 import ProductView from "../../../Widgets/ProductView";
 import { useGetExploreQuery } from "../../../services/homepage";
 import Error from "../../../Widgets/Error";
