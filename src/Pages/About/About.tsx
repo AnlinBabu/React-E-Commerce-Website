@@ -1,3 +1,10 @@
+import AppBreadCrumb from "../../Widgets/AppBreadCrumb";
+import Story from "../../Widgets/Story";
 export default function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <AppBreadCrumb />
+      <Story />
+    </div>
+  );
 }

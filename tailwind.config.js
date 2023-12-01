@@ -23,6 +23,9 @@ export default {
         text3: "#504242",
         button: "#000000",
       },
+      fontFamily: {
+        inter: ["inter"],
+      },
     },
   },
   plugins: [],

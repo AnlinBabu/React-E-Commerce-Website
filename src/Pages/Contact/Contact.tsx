@@ -1,4 +1,9 @@
+import AppBreadCrumb from "../../Widgets/AppBreadCrumb";
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <AppBreadCrumb />
+    </div>
+  );
 }

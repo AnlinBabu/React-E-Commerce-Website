@@ -1,3 +1,9 @@
+import AppBreadCrumb from "../../Widgets/AppBreadCrumb";
+
 export default function SignUp() {
-  return <div>SignUp</div>;
+  return (
+    <div>
+      <AppBreadCrumb />
+    </div>
+  );
 }
