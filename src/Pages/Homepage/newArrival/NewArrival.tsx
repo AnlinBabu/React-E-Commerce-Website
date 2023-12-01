@@ -1,4 +1,3 @@
-import React from "react";
 import SubHeading from "../../../Widgets/SubHeading";
 import MainHeading from "../../../Widgets/MainHeading";
 import Loading from "../../../Widgets/Loading";
@@ -6,7 +5,6 @@ import Error from "../../../Widgets/Error";
 import { useGetNewArrivalQuery } from "../../../services/homepage";
 import NewItem from "./NewItem";
 import { Product } from "../../../services/types";
-// import NewArrivalItem from "./NewArrivalItem";
 export default function NewArrival() {
   const { data, error, isLoading } = useGetNewArrivalQuery("");
 

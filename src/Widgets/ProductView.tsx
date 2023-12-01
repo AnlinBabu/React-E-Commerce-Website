@@ -1,4 +1,3 @@
-import React from "react";
 import SubHeading from "./SubHeading";
 import MainHeading from "./MainHeading";
 import Product from "./Product";
@@ -12,9 +11,10 @@ type Props = {
   showArrows?: boolean;
   headingbuttonTxt?: string;
   headingshadow?: boolean;
-  subheadingTxt: string;
+  subheadingTxt?: string;
   bottombuttonTxt?: string;
   numRows: number;
+  mainHeadingLeftRectangle?: boolean;
 };
 
 export default function ProductView({
@@ -25,18 +25,15 @@ export default function ProductView({
   headingbuttonTxt,
   headingshadow,
   subheadingTxt,
-  bottombuttonTxt,
+  mainHeadingLeftRectangle,
   numRows = 1,
+  bottombuttonTxt,
 }: Props) {
   const [visibleIndex, setVisibleIndex] = useState(0);
   const productsPerPage = 4 * numRows;
   const numPages = Math.ceil(products.length / productsPerPage);
-  console.log(
-    "numpages" + numPages,
-    "productsPerPage" + productsPerPage,
-    "productsLength" + products.length,
-    numRows
-  );
+
+  // console.log("products", products);
   const showNextProducts = () => {
     setVisibleIndex((prevIndex) => (prevIndex + 1 * numRows) % products.length);
   };
@@ -47,14 +44,15 @@ export default function ProductView({
         (prevIndex - 1 * numRows + products.length) % products.length
     );
   };
-
+  console.log(products);
   return (
     <div className="grid grid-cols-1 gap-4 mb-[60px]">
       <div className="mb-5">
-        <SubHeading text={subheadingTxt} />
+        {subheadingTxt && <SubHeading text={subheadingTxt} />}
       </div>
       <div className="mb-10">
         <MainHeading
+          leftRectagle={mainHeadingLeftRectangle}
           headingTxt={headingTxt}
           showArrows={showArrows}
           buttonTxt={headingbuttonTxt}
@@ -76,7 +74,7 @@ export default function ProductView({
           {products.map((_item, index) => {
             const row = Math.floor(index / numRows);
             const col = index % numRows;
-
+            console.log(_item);
             return (
               <div key={index} className="grid-row">
                 {products

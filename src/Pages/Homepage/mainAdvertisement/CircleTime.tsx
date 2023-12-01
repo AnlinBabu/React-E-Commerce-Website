@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = { mainTxt: number | string; subTxt: string };
 export default function CircleTime({ mainTxt, subTxt }: Props) {
   return (
