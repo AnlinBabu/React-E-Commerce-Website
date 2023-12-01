@@ -8,7 +8,7 @@ const AppBreadCrumb = () => {
     <div className="flex mt-[80px]">
       {location.pathname === "/" ? null : (
         <Link to="/">
-          <span className="text-text2">Home</span>
+          <span className="text-text2 font-poppins">Home</span>
         </Link>
       )}
       {pathnames.map((value, index) => {
@@ -18,12 +18,15 @@ const AppBreadCrumb = () => {
         return (
           <div key={index}>
             {last ? (
-              <span className="font-bold" key={to}>
+              <span className="font-bold font-poppins" key={to}>
                 &nbsp;&nbsp;<span className="text-text2">/</span>&nbsp;&nbsp;{" "}
                 {value}
               </span>
             ) : (
-              <span className="font-normal text-sm leading-[21px] " key={to}>
+              <span
+                className="font-normal font-poppins text-sm leading-[21px] "
+                key={to}
+              >
                 &nbsp;&nbsp;/ <Link to={to}>{value}</Link>
               </span>
             )}

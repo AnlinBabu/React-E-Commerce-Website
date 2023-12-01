@@ -25,6 +25,7 @@ export default {
       },
       fontFamily: {
         inter: ["inter"],
+        poppins: ["poppins"],
       },
     },
   },
